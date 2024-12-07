@@ -1,5 +1,50 @@
 # RewardPay Coding Challenge
 
+
+## Prerequisites
+
+  npm install -g typescript
+
+Install Dependencies:
+
+npm install
+
+Dependencies
+The following dependencies are required for this project:
+
+TypeScript
+
+Node.js
+
+The devDependencies required for testing and running TypeScript code include:
+
+Jest
+
+ts-jest
+
+@types/jest
+
+To install Jest and TypeScript support, run:
+npm install --save-dev jest ts-jest @types/jest
+
+Configuration
+Ensure your tsconfig.json includes the necessary settings for module interoperability:
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*"]
+}
+
+Ensure your jest.config.js is set up for testing with TypeScript:
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+};
+
+
 ## Overview
 
 This repo contains the instructions and the data you need to complete the _RewardPay coding challenge_.  This challenge is not intended to be complex, but it is an opportunity for you to showcase your understanding and applying of good development practices.
